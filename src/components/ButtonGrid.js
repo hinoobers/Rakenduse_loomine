@@ -4,7 +4,9 @@ const ButtonGrid = (props) => {
     console.log(props);
 
     const clickHandler = (click) => {
-        console.log(click.target.innerText)
+        if(click.target.toString() === "[object HTMLImageElement]") {
+            return props.onSubmit("xY");
+        }
         props.onSubmit(click.target.innerText)
     }
     return ( 
