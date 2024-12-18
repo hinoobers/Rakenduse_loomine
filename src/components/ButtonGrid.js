@@ -1,7 +1,7 @@
 import './ButtonGrid.css';
 
 const ButtonGrid = (props) => {
-    console.log(props);
+    // console.log(props);
 
     const clickHandler = (click) => {
         if(click.target.toString() === "[object HTMLImageElement]") {
