@@ -1,7 +1,10 @@
 .display {
-    height: 50px;
-    font-size: 30px;
-    text-align: end;
+  height: 65px;
+  font-size: 30px;
+  text-align: end;
+  margin: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  border-radius: 6px;
 }
 
 input::-webkit-outer-spin-button,
