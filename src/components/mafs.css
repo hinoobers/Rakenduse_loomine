@@ -8,3 +8,57 @@
   justify-content: center;
   align-items: center;
 }
+
+.mafs-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  /* height: 100svh; */
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none; /* Removes the border around the swatch */
+  border-radius: 50%; /* Makes the color swatch circular */
+}
+
+.function-color {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  box-shadow: 1px 1px 3px 0px #ccc;
+}
+
+.mafs-inputs > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  /* padding: 10px; */
+}
+
+.mafs-inputs > div > input[type=text] {
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 6px;
+  height: 38px;
+}
+
+input[type=text]:focus{
+  outline: none;
+}
+
+.btn-mafs {
+  width: 80px;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}

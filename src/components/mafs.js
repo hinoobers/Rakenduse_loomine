@@ -50,24 +50,23 @@ function ZoomExample() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="mafs-inner">
 
-      <div style={{ marginBottom: "20px" }}>
+      <div className="mafs-inputs" style={{paddingRight: '30px'}}>
 
         {inputs.map((input, index) => (
-          <div key={index} style={{ marginBottom: "6px" }}>
+          <div key={index}>
           <input
             type="text"
             value={input.value}
             onChange={(e) => handleInputChange(index, e.target.value)}
             placeholder={`Input ${index + 1}`}
-            style={{ margin: "5px", padding: "5px" }}
           />
           <input 
           type="color"
           value={input.color}
           onChange={(e) => handleColorChange(index, e.target.value)}
-          style={{ margin: "5px", padding: "5px" }}
+          className="function-color"
           />
 
           </div>
@@ -76,19 +75,22 @@ function ZoomExample() {
           
         <button
         onClick={addInputField}
+        className="btn-mafs"
         >
           Lisa
         </button>
 
         <button
         onClick={evaluateFunction}
+        className="btn-mafs"
+        style={{marginLeft: '10px'}}
         >
           Kuva
         </button>
       </div>
 
         
-      <div className="mafs-container" style={{ marginTop: "20px" }}>
+      <div className="mafs-container">
         <Mafs
         zoom={{ min: 0.5, max: 3 }} // min = outwards, max = inwards
         viewBox={{
