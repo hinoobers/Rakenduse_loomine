@@ -2,7 +2,7 @@ import './App.css';
 import ButtonGrid from './components/ButtonGrid';
 import NumberDisplay from './components/NumberDisplay';
 import { useState } from 'react';
-import { calculate, getPromptValue } from './Handler';
+import { calculate, getPromptValue, resetChaoticState } from './Handler';
 
 function CheckDuplicateOperators(oldVal, newVal) {
   const ops = ['+', '-', 'x', '/']
@@ -44,6 +44,7 @@ function App() {
         <ButtonGrid option1="7" option2="8" option3="9" option4="x" onSubmit={onSubmit}></ButtonGrid>
         <ButtonGrid option1="0" option2="+" option3="-" option4="=" onSubmit={onSubmit}></ButtonGrid>
       </div>
+      <button className='resetbtn' onClick={resetChaoticState} style={{display: 'none'}}>Reset</button>
     </>
   )
 }
