@@ -13,7 +13,7 @@ export function calculate(prompt) {
             .replace(/π(\d)/g, 'πx$1') 
             .replace(/(\d|\))π/g, '$1xπ')
     console.log(prompt);
-    let modified = prompt.replaceAll("x²", "**");
+    let modified = prompt.replaceAll("x^y", "**");
     modified = modified.replaceAll("x", "*");
     modified = modified.replaceAll("π", "Math.PI");
 

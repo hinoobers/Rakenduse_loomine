@@ -14,7 +14,7 @@ root.render(
     <BrowserRouter>
       <Routes>
 
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={<Layout/>}>
         <Route index element={<App />} />
         <Route path="joonised" element={<DisplayMafs />} />
         <Route path="*" element={<NoPage />} />
