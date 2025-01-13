@@ -9,34 +9,6 @@ export function getPromptValue(name) {
 
 export function resetChaoticState() {
     window.location.reload(); // parem viis resetida
-    // const root = document.getElementById('root');
-    // const calc = document.querySelector('.calc');
-    // const grids = document.querySelectorAll('.grid');
-    // const buttons = document.querySelectorAll('button');
-
-    // root.style.position = 'static';
-    // root.style.left = '0';
-    // root.style.top = '0';
-    // root.style.transform = 'rotate(0deg) scale(1) translate(0px, 0px)';
-
-    // calc.style.position = 'static';
-    // calc.style.left = '0';
-    // calc.style.top = '0';
-    // calc.style.transform = 'rotate(0deg) scale(1) translate(0px, 0px)';
-
-    // grids.forEach(grid => {
-    //   grid.style.position = 'static';
-    //   grid.style.left = '0';
-    //   grid.style.top = '0';
-    //   grid.style.transform = 'rotate(0deg) scale(1) translate(0px, 0px)';
-    // });
-
-    // buttons.forEach(button => {
-    //   button.style.position = 'static';
-    //   button.style.left = '0';
-    //   button.style.top = '0';
-    //   button.style.transform = 'rotate(0deg) scale(1) translate(0px, 0px)';
-    // });
 }
 
 export function calculate(prompt) {
@@ -57,9 +29,7 @@ export function calculate(prompt) {
         
         let chaosIntensity =.1;
         
-          // Function to apply chaos to an element
         function applyChaos(element) {
-            // Randomize position
             const randomLeft = Math.random() * 100 + '%';
             const randomTop = Math.random() * 100 + '%';
             const randomRotate = Math.random() * 720 - 360; 
@@ -76,16 +46,13 @@ export function calculate(prompt) {
         document.getElementsByClassName('resetbtn')[0].style.display = 'block';
 
         function startChaos() {
-            // Apply chaos to calc
             applyChaos(calc);
         
-            // Apply chaos to all grid containers
             grids.forEach(grid => {
               applyChaos(grid);
             });
         }
         
-        // Start the chaotic effect periodically
         setTimeout(() => {
             startChaos();
             chaosIntensity += .1;
