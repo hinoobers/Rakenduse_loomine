@@ -85,14 +85,6 @@ function ZoomExample() {
         >
           Lisa
         </button>
-
-        // <button
-        // onClick={evaluateFunction}
-        // className="btn-mafs"
-        // style={{marginLeft: '10px'}}
-        // >
-        //   Kuva
-        // </button>
       </div>
 
         
