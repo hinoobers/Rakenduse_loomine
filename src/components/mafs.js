@@ -22,6 +22,12 @@ function ZoomExample() {
     newInputs[index].value = value; // add the value 
     setInputs(newInputs);
     // console.log(inputs)
+
+    try {
+      evaluateFunction();
+    } catch(ex){
+
+    }
   };
   
   // handle input change (for color)
@@ -80,13 +86,13 @@ function ZoomExample() {
           Lisa
         </button>
 
-        <button
-        onClick={evaluateFunction}
-        className="btn-mafs"
-        style={{marginLeft: '10px'}}
-        >
-          Kuva
-        </button>
+        // <button
+        // onClick={evaluateFunction}
+        // className="btn-mafs"
+        // style={{marginLeft: '10px'}}
+        // >
+        //   Kuva
+        // </button>
       </div>
 
         
